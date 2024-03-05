@@ -17,7 +17,7 @@
     }
 }
 
-@keyframes example {
+/* @keyframes example {
     from {
         border-radius: 10px;
     }
@@ -25,7 +25,7 @@
     to {
         border-radius: 20px;
     }
-}
+} */
 
 :root {
     --font: AnekBangla
