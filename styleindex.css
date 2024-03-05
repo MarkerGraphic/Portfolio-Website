@@ -17,7 +17,7 @@
     }
 }
 
-/* @keyframes example {
+@keyframes example {
     from {
         border-radius: 10px;
     }
@@ -25,7 +25,7 @@
     to {
         border-radius: 20px;
     }
-} */
+}
 
 :root {
     --font: AnekBangla
@@ -65,10 +65,10 @@ button {
     padding-top: .5vw;
     padding-bottom: .5vw;
     transition: .4s;
-/*     animation-name: example;
-    animation-duration: 3s;
+    animation-name: example;
+    animation-duration: 1s;
     animation-direction: alternate-reverse;
-    animation-iteration-count: infinite; */
+    animation-iteration-count: infinite;
     cursor: pointer;
 }
 
