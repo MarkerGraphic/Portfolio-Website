@@ -65,6 +65,7 @@ button {
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
+  transition-timing-function: ease-in-out;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   cursor: pointer;
