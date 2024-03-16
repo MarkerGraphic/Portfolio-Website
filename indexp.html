@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Print</title>
+
+</head>
+
+<body>
+
+    <div class="mailBox">
+        <a href="mailto:mrkr.graphic@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>  <<<  Send Me A Message =] >>>   <i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <div class="navBar">
+        <a href="index.html"><button><i class="fa-solid fa-house"></i></button></a>
+        <a  href="indexa.html"><button>animation</button></a>
+        <a  href="indexm.html"><button>multi-media</button></a>
+        <a href="indexp.html"><button>print</button></a>
+        <a  href="indexs.html"><button>screen</button></a>
+        <a  href="indexe.html"><button>experiments</button></a>
+    </div>
+
+
+    <div class="backgroundTitle">print design
+    </div>
+
+
+
+
+    <div class="outputContainer">
+        <pre id="output"></pre>
+    </div>
+
+
+
+    <div class="mediaInfo">
+        <div class="mediaIcon">
+            <a href="https://www.instagram.com/marker.graphic/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://vimeo.com/user213139124" target="_blank"><i class="fab fa-vimeo"></i></a>
+            <a href="https://www.youtube.com/channel/UCz-gUpYRvhEgiWGzA1AnTIg" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/bálint-korka-4b46b122a/"  target="_blank"><i class="fab fa-linkedin"> </i> </a>
+        </div>
+
+
+        <div class="meContainer"><img id="me" src="me.png" alt=""></div>
+    </div>
+
+
+    <div class="copyRight">
+        <i class="fa-regular fa-copyright"></i> Bálint Korka | 2024
+    </div>
+
+
+
+
+    <script>
+        let output = document.getElementById("output");
+        let html = "";
+
+
+        fetch("https://opensheet.elk.sh/1b-WW2snG5qwxg6vv3VfxTG7nG3kJRV3TVgx-NKExZvg/munka"
+        )
+            .then((res) => res.json())
+            .then((data) => {
+                for (let item of data) {
+                    html += `
+            <h1><a href="" id="projectTitle">${item.ProjectTitle}</a> </h1>
+            <div class="templateContainer" ${item.classname}>
+          
+            <div class="descriptionContainer" >
+                <p>${item.Description} </p>
+            </div>
+            <div class="imageContainer"> 
+                <img src="${item.Image}"></img>
+            </div>
+            <div class="materialContainer"> 
+                <p>${item.Material} </p> 
+            </div>
+            <div class="yearContainer"> 
+                <p>${item.Year} </p> 
+            </div>
+            <div class="sourceContainer" > 
+                <p><a href="${item.Source}" target="_blank">${item.Source}</a> </p>
+            </div>
+            </div>
+            `;
+                }
+                output.innerHTML = html;
+
+
+            });
+        // output.textContent = JSON.stringify(data, undefined, 2)});
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+</html>
