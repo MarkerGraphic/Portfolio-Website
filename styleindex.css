@@ -3,7 +3,7 @@
     src: url('AnekBangla-VariableFont_wdth,wght.ttf');
 }
 
-/* @keyframes animate {
+@keyframes animate {
     0% {
         font-size: 1em;
         font-variation-settings: 'wght' 200, 'slnt' 0;
@@ -15,7 +15,7 @@
         font-variation-settings: 'wght' 800, 'slnt' -24;
         color: #767676;
     }
-} */
+}
 
 @keyframes example {
     from {
