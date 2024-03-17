@@ -3,7 +3,7 @@
     src: url('AnekBangla-VariableFont_wdth,wght.ttf');
 }
 
-@keyframes animate {
+/* @keyframes animate {
     0% {
         font-size: 1em;
         font-variation-settings: 'wght' 200, 'slnt' 0;
@@ -16,7 +16,7 @@
         color: #767676;
     }
 }
-
+ */
 @keyframes example {
     from {
         border-radius: 10px;
@@ -115,10 +115,10 @@ button:hover {
     margin: 0%;
 }
 
-span {
+/* span {
     animation: animate 4s alternate infinite ease-in-out;
     animation-timing-function: linear;
-}
+} */
 
 .textContainer {
     width: 80vw;
@@ -133,7 +133,7 @@ span {
 }
 
 
-#m {
+/* #m {
     animation-delay: 0s;
 }
 
@@ -184,7 +184,7 @@ span {
 #c {
     animation-delay: 2s;
 }
-
+ */
 .copyRight {
     position: fixed;
     bottom: 2vw;
