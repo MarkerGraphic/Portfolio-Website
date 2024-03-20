@@ -4,7 +4,7 @@
 }
 
 
-/* @keyframes example {
+@keyframes example {
   from {
     border-radius: 10px;
   }
@@ -12,7 +12,7 @@
   to {
     border-radius: 20px;
   }
-} */
+}
 
 
 s
@@ -63,9 +63,8 @@ button {
   padding-top: .5vw;
   padding-bottom: .5vw;
   transition: .4s;
-/*   animation-name: example; */
+  animation-name: example;
   animation-duration: 3s;
-  transition-timing-function: ease-in-out;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   cursor: pointer;
@@ -92,7 +91,7 @@ button:hover {
 
 
 img {
-  max-width: 45vw;
+  max-width: 60vw;
   max-height: 600px;
   border-radius: 10px;
 }
@@ -204,6 +203,33 @@ h1:hover {
   margin-top: -4vw;
 }
 
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .imageContainer {
   margin-top: -3vw;
   margin-left: 0vw;
@@ -289,8 +315,7 @@ h1:hover {
 @media only screen and (max-width: 600px) {
 
   img {
-    max-width: 60vw;
-    /* max-height: 600px; */
+    max-width: 80vw;
     border-radius: 10px;
   }
 
@@ -357,7 +382,7 @@ h1:hover {
 
   .imageContainer {
     margin-top: -3vw;
-    margin-left: 8vw;
+    margin-left: 0vw;
   }
 
   .yearContainer {
