@@ -53,6 +53,7 @@ video{
 
 
 button {
+    z-index: 500;
     min-width: 2vw;
     min-height: 2vw;
     background-color: transparent;
@@ -79,6 +80,7 @@ button {
 }
 
 button:hover {
+    z-index: 500;
     background-color: #E4871E;
     text-decoration: none;
     backdrop-filter: blur(5px);
@@ -131,6 +133,7 @@ span {
 }
 
 #homeButtons {
+    z-index: 500;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -209,6 +212,7 @@ span {
 
 @media screen and (max-width: 600px) {
     button {
+        z-index: 500;
         font-size: 1em;
         padding: 2vw;
         padding-top: 1vw;
@@ -217,6 +221,7 @@ span {
     }
 
     button:hover {
+        z-index: 500;
         font-size: 1em;
         padding: 2vw;
         padding-top: 1vw;
@@ -249,6 +254,7 @@ span {
     }
 
     #homeButtons {
+        z-index: 500;
         position: absolute;
         font-size: 1em;
         display: flex;
