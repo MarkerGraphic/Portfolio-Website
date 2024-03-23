@@ -49,7 +49,9 @@ video{
     position: fixed;
     z-index: -100;
 }
-
+video.background {
+    background: black
+  }
 
 
 button {
