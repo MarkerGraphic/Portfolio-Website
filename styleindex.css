@@ -44,13 +44,51 @@ body {
     background:  #cecece8e;
 }
 
+.preload {
+    overflow: hidden;
+}
+
+.loader-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #E4871E;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200000;
+  }
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 50px;
+    aspect-ratio: 1;
+    --g: #0000 calc(100% - 5px),#000 calc(100% - 3px) 93%,#0000;
+    background: 
+      radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,
+      radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,
+      radial-gradient(farthest-side at bottom,var(--g)) left   50% top    30%/60%  30%,
+      radial-gradient(farthest-side at top   ,var(--g)) right  34% bottom 37%/40%  20%,
+      radial-gradient(farthest-side at bottom,var(--g)) left   52% top    43%/24%  12%;
+    background-repeat: no-repeat;
+    animation: l20 1s infinite linear;
+    position: absolute;
+  }
+  @keyframes l20 {
+    100% {transform: rotate(1turn)}
+  }
+
+
+
 video{
     position: fixed;
     z-index: -100;
 }
 
 
+
 button {
+
     z-index: 500;
     min-width: 2vw;
     min-height: 2vw;
@@ -252,7 +290,6 @@ span {
     }
 
     #homeButtons {
-        z-index: 500;
         position: absolute;
         font-size: 1em;
         display: flex;
