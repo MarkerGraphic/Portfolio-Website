@@ -11,12 +11,11 @@
 </head>
 
 
-    
-<video controls  autoplay muted loop >
+<video  controls  autoplay muted loop>
     <source src="reeeeeel01.mp4" type="video/mp4">
 
   </video> 
-<body>
+<body class="preload">
    
 
     <div class="box">
@@ -52,6 +51,19 @@
 
 
     </div>
+
+    <div class="loader-wrapper">
+        <div class="loader"></div> 
+    </div>
 </body>
 
+<script>
+
+$(window).on("load",function(){
+    $(".loader-wrapper").fadeOut("slow")
+    $("body").removeClass("preload");
+});
+
+
+</script>
 </html>
