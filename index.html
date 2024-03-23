@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="styleindex.css">
 
 </head>
-<video id="video1" controls autoplay muted loop>
+<video controls autoplay muted loop>
       <div class="loader"></div> 
     <source src="reeeeeel01.mp4" type="video/mp4">
 
@@ -51,19 +51,5 @@
 
     </div>
 </body>
-<script>
-
-$('#video1').on('loadstart', function (event) {
-  $(this).addClass('background');
-  $(this).attr("poster", "/your/loading.gif");
-});
-
-$('#video1').on('canplay', function (event) {
-  $(this).removeClass('background');
-  $(this).removeAttr("poster");
-});
-
-
-</script>
 
 </html>
