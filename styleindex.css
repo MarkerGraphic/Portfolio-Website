@@ -43,15 +43,14 @@ body {
     padding: 0;
     background:  #cecece8e;
 }
-
+video.background {
+    background: black
+  }
 
 video{
     position: fixed;
     z-index: -100;
 }
-video.background {
-    background: black
-  }
 
 
 button {
