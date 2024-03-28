@@ -3,9 +3,9 @@
     font-family: 'AnekBangla';
     src: url('AnekBangla-VariableFont_wdth,wght.ttf');
 }
-
+/* 
 @keyframes animate {
-    0% {
+    100% {
         font-size: 1em;
         font-variation-settings: 'wght' 400, 'slnt' 0;
         color: #767676;
@@ -16,9 +16,9 @@
         font-variation-settings: 'wght' 800, 'slnt' -24;
         color: #767676;
     }
-}
+} */
 
-/* @keyframes example {
+@keyframes example {
     from {
         border-radius: 10px;
     }
@@ -26,7 +26,7 @@
     to {
         border-radius: 20px;
     }
-} */
+}
 
 :root {
     --font: AnekBangla
@@ -75,7 +75,7 @@ button {
     padding-top: .5vw;
     padding-bottom: .5vw;
     transition: .4s;
-    /* animation-name: example; */
+    animation-name: example;
     animation-duration: 60s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
