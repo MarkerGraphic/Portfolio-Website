@@ -271,3 +271,35 @@ span {
         bottom: 2vw;
     }
 }
+
+
+#preloader{
+    background: black;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+
+    
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  --g: #ffffff00 calc(100% - 5px),#ffffff calc(100% - 3px) 93%,#0000;
+  background: 
+    radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,
+    radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,
+    radial-gradient(farthest-side at bottom,var(--g)) left   50% top    30%/60%  30%,
+    radial-gradient(farthest-side at top   ,var(--g)) right  34% bottom 37%/40%  20%,
+    radial-gradient(farthest-side at bottom,var(--g)) left   52% top    43%/24%  12%;
+  background-repeat: no-repeat;
+  animation: l20 1s infinite linear;
+}
+@keyframes l20 {
+  100% {transform: rotate(1turn)}
+}
