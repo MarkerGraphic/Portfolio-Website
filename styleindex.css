@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'AnekBangla';
-    src: url('AnekBangla-VariableFont_wdth,wght.ttf');
+    src: url('gtpressura.woff');
 }
 /* 
 @keyframes animate {
@@ -52,6 +52,9 @@ video{
     z-index: -100;
 }
 
+img{
+    width: 100vw;
+}
 
 
 button {
@@ -68,12 +71,12 @@ button {
     border-width: .3vw;
     border-color: #E4871E;
     color: #767676;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: var(--font);
     margin-right: 2vw;
     margin-bottom: 2vw;
     padding: 1vw;
     padding-top: .5vw;
-    padding-bottom: .5vw;
+    padding-bottom: .8vw;
     transition: .4s;
     animation-name: example;
     animation-duration: 60s;
@@ -93,12 +96,12 @@ button:hover {
     border-width: .3vw;
     border-color: #E4871E;
     color: #767676;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: var(--font);
     margin-right: 2vw;
     margin-bottom: 2vw;
-    padding: 1vw;
+    padding: 2vw;
     padding-top: .5vw;
-    padding-bottom: .5vw;
+    padding-bottom: .8vw;
     transition: .4s;
 }
 
@@ -115,6 +118,7 @@ button:hover {
 .text {
     mix-blend-mode: difference;
     height: 20vw;
+    opacity: 100%;
     display: flex;
     align-items: center;
     font-family: var(--font);
@@ -141,7 +145,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: -2vw;
+    margin-bottom: -3vw;
+    font-family: var(--font);
 }
 
 
@@ -205,7 +210,7 @@ span {
     justify-content: center;
     align-items: center;
     color: #767676;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: var(--font);
 }
 
 
@@ -263,12 +268,14 @@ span {
         justify-content: center;
         align-items: center;
         z-index: 200;
+        font-family: var(--font);
 
     }
 
     .copyRight {
         position: fixed;
         bottom: 2vw;
+        font-family: var(--font);
     }
 }
 

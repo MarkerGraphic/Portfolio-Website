@@ -6,31 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css">
 
-    <title>Animation</title>
+    <title>Balint Korka - Portfolio</title>
 
 </head>
 
+<div class="header">
+    <a href="index.html"><button><i  class="fa fa-angle-left"></i></i></button></a>
+    <div class="mailBox">
+
+        <a href="mailto:mrkr.graphic@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
+            <<< Send Me A Message=]>>> <i class="fa-solid fa-envelope"></i>
+        </a>
+    </div>
+
+
+
+</div>
+
+
+  
+
+<div class="navBarContainer">
+    <div id="navBar">
+        <!-- <a href="index.html"><button><i class="fa-solid fa-house"></i></button></a> -->
+        <a href="indexa.html"><button class="showall">show all</button></a>
+        <button class="btn" id="short" onclick="filter('short')">short-film</button>
+        <button class="btn" id="stopm" onclick="filter('stopm')">stop-motion</button>
+        <button class="btn" id="prop" onclick="filter('prop')">prop-making</button>
+        <button class="btn" id="documentary" onclick="filter('documentary')">documentary</button>
+        <button class="btn" id="paper" onclick="filter('paper')">paper</button>
+        <button class="btn" id="coding" onclick="filter('coding')">creative-coding</button>
+        <button class="btn" id="experimental" onclick="filter('experimental')">experimental</button>
+    </div>
+</div>
+
+
+
 <body>
 
-    <div class="mailBox">
-        <a href="mailto:mrkr.graphic@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>  <<<  Send Me A Message =] >>>   <i class="fa-solid fa-envelope"></i></a>
-    </div>
 
-
-    <div class="navBar">
-        <a href="index.html"><button><i class="fa-solid fa-house"></i></button></a>
-        <a  href="indexa.html"><button>animation</button></a>
-        <a  href="indexm.html"><button>multi-media</button></a>
-        <a href="indexp.html"><button>print</button></a>
-        <a  href="indexs.html"><button>screen</button></a>
-        <a  href="indexe.html"><button>experiments</button></a>
-    </div>
-
-
-    <div class="backgroundTitle">animation
+    <div class="backgroundTitle">portfolio
     </div>
 
 
@@ -46,12 +63,14 @@
         <div class="mediaIcon">
             <a href="https://www.instagram.com/marker.graphic/" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="https://vimeo.com/user213139124" target="_blank"><i class="fab fa-vimeo"></i></a>
-            <a href="https://www.youtube.com/channel/UCz-gUpYRvhEgiWGzA1AnTIg" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/bálint-korka-4b46b122a/"  target="_blank"><i class="fab fa-linkedin"> </i> </a>
+            <a href="https://www.youtube.com/channel/UCz-gUpYRvhEgiWGzA1AnTIg" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/bálint-korka-4b46b122a/" target="_blank"><i class="fab fa-linkedin">
+                </i> </a>
         </div>
 
 
-        <div class="meContainer"><img id="me" src="me.png" alt=""></div>
+        <div class="meContainer"><img id="me" src="me.png.webp" alt=""></div>
     </div>
 
 
@@ -61,38 +80,40 @@
 
 
 
-
     <script>
         let output = document.getElementById("output");
         let html = "";
 
 
-        fetch("https://opensheet.elk.sh/1m14VD275flNVPbnbMyuBtAG55HewEc7Jad24p9wVF_g/munka"
+        fetch("https://opensheet.elk.sh/1vu7Nw17pXuu-cNWJV5YjZw2hrZPdC3aYHKFTaLOQOas/munka"
         )
             .then((res) => res.json())
             .then((data) => {
                 for (let item of data) {
+
+
+
+
                     html += `
-            <h1><a href="" id="projectTitle">${item.ProjectTitle}</a> </h1>
-            <div class="templateContainer" ${item.classname}>
-          
-            <div class="descriptionContainer" >
-                <p>${item.Description} </p>
+        <div class="container ${item.Tag}">            
+        <div class="projectUnit" id="${item.Identifier}" > 
+            <div class="projectTitle"  onclick="dropdown(${item.Identifier})">
+                <h1>${item.ProjectTitle} <i class="fa fa-angle-down"></i> </h1>
+            </div>    
+                <div class="infoContainer hidden" ${item.classname}>
+                        <p>${item.Description} </p>
+                        <p>${item.Material} </p> 
+                        <p>${item.Year} </p>
+                        <p><a href="${item.Source}" target="_blank">${item.Source}</a> </p>
+        
+            </div><div class="imageContainer"> <a href="${item.Source}" target="_blank"> <img class="projectImage" src="${item.Image}"> </a> </img>
             </div>
-            <div class="imageContainer"> 
-                <img src="${item.Image}"></img>
-            </div>
-            <div class="materialContainer"> 
-                <p>${item.Material} </p> 
-            </div>
-            <div class="yearContainer"> 
-                <p>${item.Year} </p> 
-            </div>
-            <div class="sourceContainer" > 
-                <p><a href="${item.Source}" target="_blank">${item.Source}</a> </p>
-            </div>
-            </div>
+        </div>
+        </div>
             `;
+
+
+
                 }
                 output.innerHTML = html;
 
@@ -100,8 +121,75 @@
             });
         // output.textContent = JSON.stringify(data, undefined, 2)});
 
+        function dropdown(Identifier) {
+            const projectUnit = document.getElementById(Identifier)
+            const infoContainer = projectUnit.getElementsByClassName("infoContainer")[0]
+            infoContainer.classList.toggle("hidden");
+
+            // console.log({projectUnit});
+        }
+
+        // function filter(buttonTag) {
+
+        //     document.getElementById(buttonTag).classList.toggle("active")
 
 
+        //     var activeIds = [];
+        //     var activebuttonsEl = document.getElementsByClassName("active")
+        //     const buttons = document.getElementsByClassName("btn")
+        //     const containers = document.getElementsByClassName("container");
+
+        //     for (button of buttons) {
+        //         if (button.classList.contains("active")) {
+        //             // only triggers amount of times there are active buttons
+        //             activeIds.push(button.id)
+        //             // console.log(activeIds)
+                    
+        //         }
+
+
+        //     }
+
+            // for (let container of containers) {
+            //     if (container.classList.contains(activeIds)) {
+            //         container.classList.toggle("hidden");
+
+            //     }
+
+
+            // }
+
+
+
+
+        // }
+
+
+         function filter(buttonTag) {
+
+        
+
+            const buttons = document.getElementsByClassName("btn")
+            const containers = document.getElementsByClassName("container");
+
+
+            var activeTag = document.getElementById(buttonTag).classList.toggle("active")
+
+        
+        for (let container of containers) {
+                if (container.classList.contains(buttonTag)) {
+                    container.classList.toggle("projectUnit");
+                  
+                    
+                } else {
+                    container.classList.add("hidden");
+
+                }
+        }
+
+
+
+    }
 
 
 

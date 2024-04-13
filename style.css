@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Anek Bangla';
-  src: url('AnekBangla-VariableFont_wdth,wght.ttf');
+  src: url('gtpressura.woff');
 }
 
 
@@ -25,7 +25,17 @@ s
 
 html {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -36,6 +46,7 @@ body {
   padding-right: 5vw;
   background: #cecece8e;
   font-family: "Anek Bangla", sans-serif;
+  width: 90vw;
 
 }
 
@@ -44,7 +55,35 @@ a {
   color: #56C7C4;
 }
 
+p {
+  width: 35vw;
+  margin: 0%;
+}
+
+.showall{
+  display: flex;
+  justify-content: center;
+  background-color:#56C7C4;;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  font-size: 1.2em;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color:#56C7C4;;
+  color: white;
+  font-family: "Anek Bangla", sans-serif;
+padding: 1vw;
+padding-top: .5vw;
+padding-bottom: .8vw;
+  transition: .4s;
+}
+
 button {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
   min-width: 2vw;
   min-height: 2vw;
   background-color: transparent;
@@ -53,15 +92,13 @@ button {
   font-size: 1.2em;
   border-radius: 10px;
   border-style: solid;
-  border-width: .3vw;
-  border-color: #E4871E;
+  border-width: 1px;
+  border-color: #767676;
   color: #767676;
   font-family: "Anek Bangla", sans-serif;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
   padding: 1vw;
-  padding-top: .5vw;
-  padding-bottom: .5vw;
+padding-top: .5vw;
+padding-bottom: .8vw;
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
@@ -71,48 +108,115 @@ button {
 }
 
 button:hover {
-  background-color: #E4871E;
+  display: flex;
+  justify-content: center;
+  background-color: #767676;
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
   border-radius: 10px;
   border-style: solid;
-  border-width: .3vw;
-  border-color: #E4871E;
-  color: #767676;
+  border-width: 1px;
+  border-color: #767676;
+  color: white;
   font-family: "Anek Bangla", sans-serif;
-  margin-right: 2vw;
-  margin-bottom: 2vw;
-  padding: 1vw;
-  padding-top: .5vw;
-  padding-bottom: .5vw;
+padding: 2vw;
+padding-top: .5vw;
+padding-bottom: .8vw;
   transition: .4s;
 }
 
 
-img {
-  max-width: 60vw;
-  max-height: 600px;
+.active {
+  display: flex;
+  justify-content: center;
+  background-color: #767676;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  font-size: 1.2em;
   border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #767676;
+  color: white;
+  font-family: "Anek Bangla", sans-serif;
+padding: 1vw;
+padding-top: .5vw;
+padding-bottom: .8vw;
+  transition: .4s;
+
+}
+
+.active:hover {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  min-width: 2vw;
+  min-height: 2vw;
+  background-color: #3c3c3c;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
+  font-size: 1.2em;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #767676;
+  color: #767676;
+  font-family: "Anek Bangla", sans-serif;
+  padding: 1vw;
+padding-top: .5vw;
+padding-bottom: .8vw;
+  transition: .4s;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+
+}
+
+img {
+  max-width: 38vw;
+  border-radius: 10px;
+}
+
+img:hover {
+  opacity: 80%;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Navigation */
 
 .mailBox {
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
   width: 100%;
+  margin: 0%;
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items: center;
   color: #767676;
   font-family: "Anek Bangla", sans-serif;
 }
 
-.navBar {
+.navBarContainer{
+  width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  /* position: fixed; */
+
+}
+
+#navBar {
+  display: flex;
+  justify-content: center;
+  column-gap: 2vw;
+  row-gap: 2vw;
+  flex-wrap: wrap;
+  /* margin-top: 1vw; */
   position: fixed;
-  width: fit-content;
+  width: 60vw;
   z-index: 200;
 }
 
@@ -126,8 +230,8 @@ img {
   opacity: 40%;
   font-size: 15em;
   rotate: -2deg;
-  margin-top: 3vw;
-  margin-left: 5vw;
+  margin-top: 5vw;
+  margin-left: 8vw;
   white-space: pre-wrap;
   font-family: "Anek Bangla", sans-serif;
   font-weight: 700;
@@ -137,21 +241,30 @@ img {
 
 
 /* Json elements */
+ 
 
+.hidden {
+  display: none;
+}
+
+.projectUnit {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+}
 
 h1 {
   background-color: transparent;
   border-style: solid;
-  border-width: .4vw;
-  border-color: #56C7C4;
+  border-width: 1px;
+  border-color: #767676;
   color: #767676;
   backdrop-filter: blur(5px);
-  width: 50vw;
-  font-size: 2em;
-  margin-top: 5vw;
-  margin-left: 20vw;
-  padding: 2vw;
-  text-align: center;
+  width: 35vw;
+  font-size: 1.5em;
+  padding: 1.8vw;
+  font-weight: 100;
+  text-align: left;
   border-radius: 20px;
   transition: .4s;
   animation-name: example;
@@ -163,35 +276,46 @@ h1 {
 
 
 h1:hover {
-  background-color: #56C7C4;
+  background-color: transparent;
   border-style: solid;
-  border-width: .4vw;
-  border-color: #56C7C4;
+  border-width: 1px;
+  border-color: #767676;
   color: #767676;
   backdrop-filter: blur(5px);
-  width: 50vw;
-  font-size: 2em;
-  margin-top: 5vw;
-  margin-left: 20vw;
-  padding: 2vw;
-  text-align: center;
+  width: 35vw;
+  font-size: 1.5em;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  text-align: left;
   border-radius: 20px;
   transition: .4s;
 }
 
-#projectTitle {
+
+.projectTitle {
   color: #767676;
+  margin-bottom: -30px;
+  font-family: "Anek Bangla", sans-serif;
 }
 
-.templateContainer {
-  display: flex;
+.projectImage {
+  width: fit-content;
+
+}
+
+
+.infoContainer {
   flex-direction: column;
   justify-content: left;
-  width: 50vw;
+  row-gap: -200px;
+  width: 35vw;
   background-size: 100% 100%;
   border-radius: 20px;
-  margin-left: 20vw;
-  padding: 2vw;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 0%;
+  padding-bottom: 0%;
   color: #767676;
   text-align: left;
   white-space: pre-wrap;
@@ -199,56 +323,19 @@ h1:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.descriptionContainer {
-  margin-top: -4vw;
-}
 
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
 
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
- 
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
 
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 
 .imageContainer {
-  margin-top: -3vw;
-  margin-left: 0vw;
+  display: flex;
+  justify-content: center;
 }
 
-.materialContainer {
-  margin-top: -2vw;
-}
-
-.yearContainer {
-  margin-top: -4vw;
-}
-
-.sourceContainer {
-  margin-top: -4vw;
-}
 
 .outputContainer {
   position: relative;
+  width: 90vw;
 }
 
 
@@ -259,8 +346,9 @@ h1:hover {
 #output {
   margin-top: 20vw;
   display: flex;
-  flex-direction: column;
+  column-gap: 4vw;
   justify-content: center;
+  flex-wrap: wrap;
   width: auto;
   height: auto;
 }
@@ -314,6 +402,10 @@ h1:hover {
 
 @media only screen and (max-width: 600px) {
 
+  p {
+    width: 80vw;
+  }
+
   img {
     max-width: 80vw;
     border-radius: 10px;
@@ -324,7 +416,7 @@ h1:hover {
     padding: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    border-width: .5vw;
+    border-width: 1px;
   }
 
   button:hover {
@@ -332,7 +424,7 @@ h1:hover {
     padding: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
-    border-width: .5vw;
+    border-width: 1px;
   }
 
   .mailBox {
@@ -341,9 +433,10 @@ h1:hover {
     justify-content: center;
     color: #767676;
     font-family: "Anek Bangla", sans-serif;
+    margin-bottom: 6vh;
   }
 
-  .navBar {
+  #navBar {
     width: 80vw;
     flex-direction: row;
     justify-content: center;
@@ -360,18 +453,26 @@ h1:hover {
     font-size: 4em;
   }
 
+  .outputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projectUnit {
+    display: flex;
+    flex-direction: column;
+  }
+
   h1 {
     width: 80vw;
     font-size: 1.2em;
     margin-left: 0px;
-    margin-top: 30vw;
   }
 
   h1:hover {
     width: 80vw;
     font-size: 1.2em;
     margin-left: 0px;
-    margin-top: 30vw;
   }
 
 
@@ -380,17 +481,16 @@ h1:hover {
     margin-left: 0px;
   }
 
+  .infoContainer {
+    width: 80vw;
+  }
+
   .imageContainer {
-    margin-top: -3vw;
     margin-left: 0vw;
   }
 
-  .yearContainer {
-    margin-top: -20vw;
-  }
-
-  .sourceContainer {
-    margin-top: -20vw;
+  .projectImage{
+    width: 80vw;
   }
 
   .mediaInfo {
@@ -413,6 +513,3 @@ h1:hover {
     font-family: "Anek Bangla", sans-serif;
   }
 }
-
-
-
