@@ -35,7 +35,7 @@ html {
 .header {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:flex-start;
 
 }
 
@@ -56,26 +56,29 @@ a {
 }
 
 p {
-  width: 35vw;
+  width: 30vw;
   margin: 0%;
+  font-family: 'Anek Bangla'
 }
 
-.showall{
+.showall {
   display: flex;
   justify-content: center;
-  background-color:#56C7C4;;
+  background-color: #56C7C4;
+  ;
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
   border-radius: 10px;
   border-style: solid;
   border-width: 1px;
-  border-color:#56C7C4;;
+  border-color: #56C7C4;
+  ;
   color: white;
   font-family: "Anek Bangla", sans-serif;
-padding: 1vw;
-padding-top: .5vw;
-padding-bottom: .8vw;
+  padding: 1.2vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
 }
 
@@ -96,9 +99,9 @@ button {
   border-color: #767676;
   color: #767676;
   font-family: "Anek Bangla", sans-serif;
-  padding: 1vw;
-padding-top: .5vw;
-padding-bottom: .8vw;
+  padding: 1.2vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
@@ -118,11 +121,11 @@ button:hover {
   border-style: solid;
   border-width: 1px;
   border-color: #767676;
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Anek Bangla", sans-serif;
-padding: 2vw;
-padding-top: .5vw;
-padding-bottom: .8vw;
+  padding: 1.2vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
 }
 
@@ -140,9 +143,9 @@ padding-bottom: .8vw;
   border-color: #767676;
   color: white;
   font-family: "Anek Bangla", sans-serif;
-padding: 1vw;
-padding-top: .5vw;
-padding-bottom: .8vw;
+  padding: 1vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
 
 }
@@ -165,8 +168,8 @@ padding-bottom: .8vw;
   color: #767676;
   font-family: "Anek Bangla", sans-serif;
   padding: 1vw;
-padding-top: .5vw;
-padding-bottom: .8vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
@@ -174,6 +177,12 @@ padding-bottom: .8vw;
   animation-iteration-count: infinite;
   cursor: pointer;
 
+}
+
+.about {
+  width: auto;
+  padding-top: 12vw;
+  color: #767676;
 }
 
 img {
@@ -200,7 +209,7 @@ img:hover {
   font-family: "Anek Bangla", sans-serif;
 }
 
-.navBarContainer{
+.navBarContainer {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -241,7 +250,7 @@ img:hover {
 
 
 /* Json elements */
- 
+
 
 .hidden {
   display: none;
@@ -261,8 +270,10 @@ h1 {
   color: #767676;
   backdrop-filter: blur(5px);
   width: 35vw;
-  font-size: 1.5em;
-  padding: 1.8vw;
+  font-size: 1.2em;
+  padding: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
   font-weight: 100;
   text-align: left;
   border-radius: 20px;
@@ -283,9 +294,9 @@ h1:hover {
   color: #767676;
   backdrop-filter: blur(5px);
   width: 35vw;
-  font-size: 1.5em;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
+  font-size: 1.2em;
+  padding-bottom: 1.2vw;
+  padding-top: 1.2vw;
   text-align: left;
   border-radius: 20px;
   transition: .4s;
@@ -344,7 +355,7 @@ h1:hover {
 
 
 #output {
-  margin-top: 20vw;
+  /* margin-top: 20vw; */
   display: flex;
   column-gap: 4vw;
   justify-content: center;
@@ -412,7 +423,7 @@ h1:hover {
   }
 
   button {
-    font-size: 1em;
+    font-size: .8em;
     padding: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
@@ -420,11 +431,51 @@ h1:hover {
   }
 
   button:hover {
-    font-size: 1em;
+    font-size: .8em;
     padding: 2vw;
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-width: 1px;
+  }
+
+  .showall {
+    display: flex;
+    justify-content: center;
+    background-color: #56C7C4;
+    ;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    font-size: .8em;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #56C7C4;
+    ;
+    color: white;
+    font-family: "Anek Bangla", sans-serif;
+    padding: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .8vw;
+    transition: .4s;
+  }
+
+  .showall:hover {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    font-size: .8em;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #56C7C4;
+    background-color: transparent;
+    color: #56C7C4;
+    font-family: "Anek Bangla", sans-serif;
+    padding: 1vw;
+    padding-top: .5vw;
+    padding-bottom: .8vw;
+    transition: .4s;
   }
 
   .mailBox {
@@ -450,8 +501,14 @@ h1:hover {
     width: 80vw;
     margin-top: 18vw;
     margin-left: 0px;
-    font-size: 4em;
+    font-size: 3em;
   }
+
+
+.about {
+  width: 80vw;
+  padding-top:40vw;
+}
 
   .outputContainer {
     display: flex;
@@ -465,13 +522,13 @@ h1:hover {
 
   h1 {
     width: 80vw;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 0px;
   }
 
   h1:hover {
     width: 80vw;
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 0px;
   }
 
@@ -489,7 +546,7 @@ h1:hover {
     margin-left: 0vw;
   }
 
-  .projectImage{
+  .projectImage {
     width: 80vw;
   }
 
