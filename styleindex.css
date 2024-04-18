@@ -36,9 +36,10 @@ html,
 body {
     position: fixed;
     height: 100%;
-    width: 90vw;
+    width: 100%;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: row;
+    column-gap: 10vw;
     justify-content: left;
     align-items: center;
     margin: 0;
@@ -68,7 +69,7 @@ button {
     font-size: 1.2em;
     border-radius: 15px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color:#767676;
     color:white;
     font-family: var(--font);
@@ -93,7 +94,7 @@ button:hover {
     font-size: 1.2em;
     border-radius: 15px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     border-color: #767676;
     color:white;
     font-family: var(--font);
@@ -116,7 +117,6 @@ button:hover {
 }
 
 .text {
-    position: fixed;
     mix-blend-mode: difference;
     width: 40vw;
     height: 20vw;
@@ -125,11 +125,11 @@ button:hover {
     align-items: center;
     font-family: var(--font);
     font-variation-settings: 'wght' 400, 'slnt' 0;
-    font-size: 10em;
+    font-size: 2.4em;
     color: #767676;
     line-break: auto;
     white-space: pre-wrap;
-    margin: 0%;
+    padding-left: 5vw;
 }
 
 span {
@@ -139,6 +139,10 @@ span {
 
 .textContainer {
     width: 80vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
 }
 
 #homeButtons {
@@ -149,68 +153,17 @@ span {
     align-items: center;
     margin-bottom: -4vw;
 
-    font-family: var(--font);
+    font-family:'AnekBangla';
 }
 
-
-#m {
-    animation-delay: 0s;
-}
-
-#a {
-    animation-delay: 4s;
-}
-
-#r {
-    animation-delay: 8s;
-}
-
-#k {
-    animation-delay: 12s;
-}
-
-#e {
-    animation-delay: 16s;
-}
-
-#r2 {
-    animation-delay: 0s;
-}
-
-#g {
-    animation-delay: 4s;
-}
-
-#r3 {
-    animation-delay: 8s;
-}
-
-#a2 {
-    animation-delay: 12s;
-}
-
-#p {
-    animation-delay: 16s;
-}
-
-#h {
-    animation-delay: 0s;
-}
-
-#i {
-    animation-delay: 4s;
-}
-
-#c {
-    animation-delay: 8s;
-}
 
 .copyRight {
     position: fixed;
     bottom: 2vw;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    padding-left: 10vw;
     align-items: center;
     color: #767676;
     font-family: var(--font);
@@ -275,11 +228,7 @@ span {
 
     }
 
-    .copyRight {
-        position: fixed;
-        bottom: 2vw;
-        font-family: var(--font);
-    }
+    
 }
 
 
