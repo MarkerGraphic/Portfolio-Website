@@ -141,7 +141,7 @@ span {
     width: 80vw;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 
 }
 
@@ -175,6 +175,23 @@ span {
 
 
 @media screen and (max-width: 600px) {
+    html,
+    body {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        column-gap: 10vw;
+        justify-content:center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        background:  #cecece8e;
+    }
+
+
+
     button {
         z-index: 500;
         font-size: 1em;
@@ -206,6 +223,10 @@ span {
 
     }
 
+    .textContainer{
+        margin-top: -5vw;
+    }
+
     .text {
         height: 40vw;
         display: flex;
@@ -214,7 +235,7 @@ span {
         font-variation-settings: 'wght' 400, 'slnt' 0;
         font-size: 4em;
         color: #767676;
-        margin: 0%;
+       
     }
 
     #homeButtons {
