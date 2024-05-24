@@ -64,7 +64,7 @@ html body{
   overflow: hidden;
   /* position: relative; */
   /* color: rgb(165, 190, 255); */
-  color: rgb(255, 165, 165);
+  color: rgb(163, 163, 163);
   mix-blend-mode:difference;
   /* mask-composite: subtract; */
   font-weight: 400 ;
