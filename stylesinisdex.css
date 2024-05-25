@@ -2,7 +2,11 @@
     font-family: sinisdex;
     src: url(SinisdexVF.woff);
   }
-
+  
+  @font-face {
+    font-family: gtpressura;
+    src: url('gtpressura.woff');
+  }
 
 
 html body{
@@ -341,8 +345,8 @@ img{
  border-radius: 20px;
  background-color: black;
  color: white;
- font-size: .15em;
- line-height: 140%;
+ font-family:'gtpressura';
+ font-size: .12em;
  padding: 2vw;
 }
 
@@ -360,8 +364,8 @@ img{
  border-radius: 20px;
  background-color: black;
  color: white;
- font-size: .15em;
- line-height: 140%;
+ font-family:'gtpressura';
+ font-size: .12em;
  padding: 4vw;
 }
 
@@ -380,7 +384,7 @@ img{
  border-radius: 20px;
  background-color: black;
  color: white;
- font-size: .15em;
- line-height: 140%;
+ font-family:'gtpressura';
+ font-size: .12em;
  padding: 2vw;
 }
