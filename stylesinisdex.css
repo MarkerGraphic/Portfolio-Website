@@ -388,3 +388,400 @@ img{
  font-size: .12em;
  padding: 2vw;
 }
+
+@media only screen and (max-width: 600px)  {
+  
+  @font-face {
+    font-family: sinisdex;
+    src: url(SinisdexVF.woff);
+  }
+  
+  @font-face {
+    font-family: gtpressura;
+    src: url('gtpressura.woff');
+  }
+
+
+html body{
+  max-width: 1920px;
+    font-family: sinisdex;
+    font-weight: 600;
+    font-size: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0%;
+}
+
+
+.frameInfo{
+    /* position: fixed; */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 540px;
+    z-index: 5000;
+}
+
+
+/* title */
+.ink{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 540px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* position: relative; */
+  color: white;
+  font-weight: 400 ;
+  font-size: 4em;
+  z-index: 100000;
+}
+
+
+.title{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 540px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  overflow: hidden;
+  /* position: relative; */
+  /* color: rgb(165, 190, 255); */
+  color: rgb(163, 163, 163);
+  mix-blend-mode:difference;
+  /* mask-composite: subtract; */
+  font-weight: 400 ;
+  font-size: 2em;
+  z-index: 10000000;
+}
+
+
+.title span {
+
+  animation: lefttoright 10s  infinite;
+}
+
+/* Marquee */
+
+.marquee {
+    max-width: 100vw;
+    /* border: 1px solid red; */
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    font-weight: 400 ;
+    
+  }
+
+  .marquee span {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    display: inline-block;
+    animation: marquee 30s  infinite;
+   
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100vw);
+ 
+    }
+    100% {
+      transform: translateX(-100%);
+     
+    }
+  }
+
+  /* FunkySheet */
+
+  .funkysheet {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: 540px;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    font-weight: 400 ;
+    text-align: center;
+    white-space: pre-wrap;
+    padding: 2vw;
+  }
+
+/* Variable animation */
+
+.variable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 540px;
+  /* border: 1px solid red; */
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  font-weight: 400 ;
+  font-size: 3em;
+  
+}
+
+.variable span {
+
+  animation: lefttoright 4s  infinite;
+ 
+}
+
+  .lefttoright {
+    font-size: .9em;
+    animation: lefttoright 4s  infinite;
+    
+  }
+
+  .righttoleft {
+    font-size: .9em;
+    animation: righttoleft 4s  infinite;
+    
+  }
+
+
+  @keyframes lefttoright {
+    0% {
+      font-weight: 100 ;
+ 
+    }
+    50% {
+      font-weight: 800 ;
+     
+    }
+
+    100% {
+      font-weight: 100 ;
+ 
+    }
+  }
+
+  @keyframes righttoleft {
+    0% {
+      font-weight: 800 ;
+ 
+    }
+    50% {
+      font-weight: 100 ;
+     
+    }
+
+    100% {
+      font-weight: 800 ;
+ 
+    }
+  }
+
+    /* Alphabet */
+
+    .alphabetleft {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      background-color: black;
+      max-width: 100vw;
+      height: 540px;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      font-weight: 100 ;
+      font-size: .4em;
+      text-align: left;
+      white-space: pre-wrap;
+      line-height: 6vw;
+    }
+  
+
+    .alphabetright {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      background-color:white;
+      max-width: 100vw;
+      height: 540px;
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      font-weight: 800 ;
+      font-size: .4em;
+      text-align: right;
+      white-space: pre-wrap;
+      line-height: 6vw;
+
+    }
+
+.menu{
+  background-color: black;
+  color: white;
+  position: fixed;
+    bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10vw;
+  width: 100vw;
+  font-size: .2em;
+  padding: 1vw;
+  padding-bottom: .5vw;
+  z-index: 400000;
+
+}
+
+.about{
+
+}
+
+.about:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.workshop{
+ /* width: 720px;
+ height: 720px; */
+}
+
+.workshop:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.plotter{
+
+}
+
+.plotter:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.download{
+
+}
+
+.download:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
+
+.infoContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  height: 0px;
+}
+
+.videoInsert{
+  max-height: 270px;
+}
+
+img{
+  height: 100px;
+}
+
+.textContainer{
+  min-width: 200px;
+}
+
+.download a {
+  text-decoration: none;
+  color: white;
+}
+
+.download a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+
+
+#ABOUT{
+  position: fixed;
+  bottom: 100px;
+  z-index: 5000;
+  display: none;
+  width: 200px;
+ height: auto;
+ border-radius: 20px;
+ background-color: black;
+ color: white;
+ font-family:'gtpressura';
+ font-size: .12em;
+ padding: 2vw;
+}
+
+#WORKSHOP {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1vw;
+  position: fixed;
+  bottom: 100px;
+  z-index: 5000;
+  display: none;
+  width: 200px;
+ height: auto;
+ border-radius: 20px;
+ background-color: black;
+ color: white;
+ font-family:'gtpressura';
+ font-size: .12em;
+ padding: 4vw;
+}
+
+#PLOTTER {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1vw;
+  display: flex;
+  position: fixed;
+  bottom: 100px;
+  z-index: 5000;
+  display: none;
+  width: 200px;
+ height: auto;
+ border-radius: 20px;
+ background-color: black;
+ color: white;
+ font-family:'gtpressura';
+ font-size: .12em;
+ padding: 2vw;
+}
+
+}
