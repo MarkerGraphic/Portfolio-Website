@@ -13,11 +13,11 @@
 </head>
 
 <div class="header">
-    <a href="index.html"><button><i  class="fa fa-angle-left"></i></i></button></a>
+    <a class="back" href="index.html"> <i  class="fa fa-angle-left"></i></a>
     <div class="mailBox">
 
         <a href="mailto:mrkr.graphic@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i>
-            <<< Send Me A Message=]>>> <i class="fa-solid fa-envelope"></i>
+            <<< Send Me A Message=] >>> <i class="fa-solid fa-envelope"></i>
         </a>
     </div>
 
@@ -28,13 +28,10 @@
 
 <div class="navBarContainer">
     <div id="navBar">
-        <!-- <a href="index.html"><button><i class="fa-solid fa-house"></i></button></a> -->
-        <a href="indexa.html"><button class="showall">show all</button></a>
         <button class="btn" id="short" onclick="filter('short')">short-film</button>
         <button class="btn" id="stopm" onclick="filter('stopm')">stop-motion</button>
         <button class="btn" id="prop" onclick="filter('prop')">prop-making</button>
-        <button class="btn" id="documentary" onclick="filter('documentary')">documentary</button>
-        <button class="btn" id="paper" onclick="filter('paper')">paper</button>
+        <button class="btn" id="paper" onclick="filter('paper')">print on paper</button>
         <button class="btn" id="coding" onclick="filter('coding')">creative-coding</button>
         <button class="btn" id="experimental" onclick="filter('experimental')">experimental</button>
     </div>
@@ -48,8 +45,11 @@
 
 
     <div class="outputContainer">
-        <pre id="output"></pre>
+        <div class="timeLine"> <div class="dot"><i class="fa fa-angle-right"></i></div></div>
+     <pre id="output"></pre> 
     </div>
+
+
 
     <div class="mailBox">
 
@@ -100,17 +100,16 @@
                     html += `
         <div class="container ${item.Tag}">            
         <div class="projectUnit" id="${item.Identifier}" > 
-            <div class="projectTitle"  onclick="dropdown(${item.Identifier})">
-                <h1>${item.ProjectTitle} <i class="fa fa-angle-down"></i> </h1>
+            <div class="projectTitle"  onclick="dropdown(${item.Identifier})"><h1>${item.ProjectTitle} <i class="fa fa-angle-down"></i></h1></div>
+            <div class"infoAndImage">
+                <div class="infoContainer hidden" ${item.classname}><p>${item.Description} </p>
+                <p>${item.Material} </p><p>${item.Year} </p><p><a href="${item.Source}" target="_blank">${item.Source}</a> </p>
+                </div>
             </div>    
-                <div class="infoContainer hidden" ${item.classname}>
-                        <p>${item.Description} </p>
-                        <p>${item.Material} </p> 
-                        <p>${item.Year} </p>
-                        <p><a href="${item.Source}" target="_blank">${item.Source}</a> </p>
-        
-            </div><div class="imageContainer"> <a href="${item.Video}" target="_blank"> <img class="projectImage" src="${item.Image}"> </a> </img>
+                
+            <div class="imageContainer"> <a href="${item.Video}" target="_blank"> <img class="projectImage" src="${item.Image}"> </a> </img>
             </div>
+            
         </div>
         </div>
             `;
@@ -180,12 +179,13 @@
 
         
         for (let container of containers) {
-                if (container.classList.contains(buttonTag)) {
-                    container.classList.toggle("projectUnit");
+                if (!container.classList.contains(buttonTag)) {
+                    container.classList.toggle("hidden");
                   
                     
                 } else {
-                    container.classList.add("hidden");
+                    container.classList.remove
+                    ("hidden");
 
                 }
         }

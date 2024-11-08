@@ -14,15 +14,13 @@ s
 }
 
 html {
+  width: 100%;
   display: flex;
   justify-content: center;
-  margin: 0px;
-  padding: 0px;
-  border: 0px;
-
 }
 
 .header {
+  width: auto;
   display: flex;
   justify-content: center;
   align-items:flex-start;
@@ -30,13 +28,12 @@ html {
 }
 
 body {
-  position: relative;
+  position: absolute;
   height: auto;
-  padding-left: 30vw;
-  padding-right: 30vw;
+  width: 70vw;
   background: #000000;
   font-family: "Anek Bangla", sans-serif;
-  width: 90vw;
+ 
 
 }
 
@@ -46,57 +43,15 @@ a {
 }
 
 p {
-  width: 30vw;
+  width: 20vw;
   margin: 0%;
   font-family: 'Anek Bangla'
-}
-
-.showall {
-  display: flex;
-  justify-content: center;
-  background-color: #767676;
-  ;
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-  font-size: 1.2em;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #767676;
-  ;
-  color: white;
-  font-family: "Anek Bangla", sans-serif;
-  padding: 1.2vw;
-  padding-top: .5vw;
-  padding-bottom: .8vw;
-  transition: .4s;
-}
-
-.showall:hover {
-  display: flex;
-  justify-content: center;
-  background-color: #7676767e;
-  ;
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-  font-size: 1.2em;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #767676;
-  ;
-  color: white;
-  font-family: "Anek Bangla", sans-serif;
-  padding: 1.2vw;
-  padding-top: .5vw;
-  padding-bottom: .8vw;
-  transition: .4s;
 }
 
 button {
   display: flex;
   justify-content: center;
-
+  opacity: 50%;
   align-items: center;
   min-width: 2vw;
   min-height: 2vw;
@@ -105,7 +60,7 @@ button {
   backdrop-filter: blur(5px);
   font-size: 1.2em;
   border-radius: 5px;
-  border-style: solid;
+  border-style: dashed;
   border-width: 1px;
   border-color: #767676;
   color: #767676;
@@ -190,6 +145,36 @@ button:hover {
 
 }
 
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px dashed white;
+  color: #767676;
+  border-color: white;
+}
+
+
+.back:hover {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid white;
+  color: white;
+  background-color: #767676; 
+  backdrop-filter: 5px;
+  transition: .4s;
+}
+
 .about {
   /* width: 90vw; */
   position: relative;
@@ -239,29 +224,31 @@ img:hover {
   flex-wrap: wrap;
   /* margin-top: 1vw; */
   position: fixed;
-  width: 60vw;
+  width: 35vw;
   z-index: 200;
 }
 
-
-.backgroundTitle {
-  hyphens: manual;
-  width: 80vw;
-  position: fixed;
-  z-index: -200;
-  color: #cccccc;
-  opacity: 40%;
-  font-size: 15em;
-  rotate: -2deg;
-  margin-top: 5vw;
-  margin-left: 8vw;
-  white-space: pre-wrap;
-  font-family: "Anek Bangla", sans-serif;
-  font-weight: 700;
-  line-height: 0.8;
+.timeLine {
+  height: auto;
+  border: .5px dashed white;
+   margin-right: 5vw;
+   margin-top: 5vw;
 }
 
-
+.dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px dashed white;
+  position: fixed;
+  z-index: 2000;
+  color: white;
+  margin-top: -2vw;
+}
 
 /* Json elements */
 
@@ -270,26 +257,26 @@ img:hover {
   display: none;
 }
 
+
 .projectUnit {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 2vw;
+  /* flex-direction: column; */
+  justify-content: left;
+  align-items: center;
+  height: 100vh;
 }
+
 
 h1 {
   background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #767676;
   color: #767676;
-  backdrop-filter: blur(5px);
-  width: 35vw;
+  width: fit-content;
   font-size: 1.2em;
   padding: 1vw;
   padding-left: 2vw;
   padding-right: 2vw;
   font-weight: 100;
-  text-align: left;
+  text-align: center;
   border-radius: 5px;
   transition: .4s;
   animation-name: example;
@@ -299,58 +286,63 @@ h1 {
   cursor: pointer;
 }
 
-
 h1:hover {
   background-color: transparent;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #767676;
-  color: #767676;
-  backdrop-filter: blur(5px);
-  width: 35vw;
+  color: white;
+  width: fit-content;
   font-size: 1.2em;
-  padding-bottom: 1.2vw;
-  padding-top: 1.2vw;
-  text-align: left;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  text-align: center;
+  text-decoration-thickness: 1px;
   border-radius: 5px;
   transition: .4s;
 }
 
-
 .projectTitle {
   color: #767676;
-  margin-bottom: -30px;
+  rotate: -90deg;
+  border: 1px dashed  #767676;
+  border-radius: 5px;
+  width: auto;
+  /* margin-bottom: -30px; */
   font-family: "Anek Bangla", sans-serif;
 }
 
-.projectImage {
-  width: fit-content;
-
+.projectTitle :hover {
+  color: white;
+  rotate: 90deg;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  width: auto;
+  /* margin-bottom: -30px; */
+  font-family: "Anek Bangla", sans-serif;
+  transition: .4s;
 }
 
+.projectImage {
+  width: auto;
+  max-height: 720px;
+}
 
 .infoContainer {
   flex-direction: column;
   justify-content: left;
-  row-gap: -200px;
-  width: 35vw;
+  /* row-gap: -200px; */
+  column-gap: 200px;
+  width: 20vw;
   background-size: 100% 100%;
   border-radius: 5px;
-
   padding-left: 2vw;
   padding-right: 2vw;
-  padding-top: 0%;
-  padding-bottom: 0%;
+  /* padding-top: 0%;
+  padding-bottom: 0%; */
   color: #767676;
   text-align: left;
   white-space: pre-wrap;
-  backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.1);
+  /* backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.1); */
 }
-
-
-
-
 
 .imageContainer {
   display: flex;
@@ -359,24 +351,25 @@ h1:hover {
 
 
 .outputContainer {
+  display: flex;
   position: relative;
-  width: 90vw;
+  width: auto;
 }
 
 
 
 /* Json Output */
 
-
 #output {
   /* margin-top: 20vw; */
-  display: flex;
+  /* display: flex; */
   column-gap: 4vw;
   justify-content: center;
   flex-wrap: wrap;
   width: auto;
   height: auto;
 }
+
 
 
 
@@ -532,6 +525,10 @@ h1:hover {
   .projectUnit {
     display: flex;
     flex-direction: column;
+  }
+
+  .projectTitle{
+    rotate: 0deg;
   }
 
   h1 {
