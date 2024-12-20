@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+@font-face {
+    font-family: VARI;
+    src: url(CarbonfooterVF.woff2)
+}
+
+@keyframes breath {
+  from {
+    font-weight: 100;
+  }
+  to {
+    font-weight: 700;
+  }
+}
+
+body{
+    background-color: black;
+    padding: 5vw;
+}
+
+    .fontAni{
+        font-family: VARI;
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        animation: breath 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+  .animationDescription{
+    opacity: 0%;
+    font-size: 0.01em;
+  }
+
+  .letterFrame{
+    display:inline-block;
+    margin: 1vw;
+    width: inherit;
+    border: 1px solid white;
+
+  }
+</style>
+<body>
+
+<div class="fontAni"> <div class="letterFrame">b</div><div class="letterFrame">c</div><div class="letterFrame">d</div><div class="letterFrame">e</div><div class="letterFrame">f</div><div class="letterFrame">g</div><div class="letterFrame">h</div><div class="letterFrame">i</div><div class="letterFrame">j</div><div class="letterFrame">k</div><div class="letterFrame">l</div><div class="letterFrame">m </div><div class="letterFrame">n</div><div class="letterFrame">o</div><div class="letterFrame">p</div><div class="letterFrame">q</div><div class="letterFrame">r</div></div>
+
+</body>
+</html
