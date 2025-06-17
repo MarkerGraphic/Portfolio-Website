@@ -31,7 +31,7 @@ body {
   position: absolute;
   height: auto;
   width: 70vw;
-  background: #000000;
+  background: #c4c4c4;
   font-family: "Anek Bangla", sans-serif;
  
 
@@ -218,7 +218,7 @@ img:hover {
 
 #navBar {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   column-gap: 2vw;
   row-gap: 2vw;
   flex-wrap: wrap;
@@ -263,7 +263,7 @@ img:hover {
   /* flex-direction: column; */
   justify-content: left;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 
