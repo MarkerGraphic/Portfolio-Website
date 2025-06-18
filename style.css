@@ -181,6 +181,7 @@ button:hover {
   padding-left: 5vw;
   color: #767676;
 
+
 }
 
 img {
@@ -212,14 +213,13 @@ img {
 }
 
 #navBar {
-  display: flex;
-  justify-content: right;
-  column-gap: 2vw;
-  row-gap: 2vw;
-  flex-wrap: wrap;
-  /* margin-top: 1vw; */
+display: flex;
+  justify-content: center;
+  column-gap: 20px;
+ 
+  margin-top: 1vw;
   position: fixed;
-  width: 35vw;
+  width: 90vw;
   z-index: 200;
 }
 
@@ -232,6 +232,10 @@ img {
   border-style: dashed;
   border-width: 1px;
   border-color: #767676;
+}
+
+@keyframes flicker {
+  50% {opacity: 0;}
 }
 
 .dot {
@@ -248,8 +252,17 @@ img {
   position: fixed;
   z-index: 2000;
   color: #767676;
-  margin-top: -2vw;
+  margin-top: 5vw;
+  rotate: 90deg;
+  animation: flicker 3s infinite ease-in-out;
 }
+
+.dotContainer{
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+
+} 
 
 /* Json elements */
 
@@ -275,6 +288,7 @@ h1 {
   align-items: center;
   min-width: 2vw;
   min-height: 2vw;
+  max-width: fit-content;
   background-color: transparent;
   text-decoration: none;
   backdrop-filter: blur(5px);
@@ -296,7 +310,7 @@ h1 {
   cursor: pointer;
 }
 
-h1:hover {
+/* h1:hover {
   display: flex;
   justify-content: center;
   background-color: #767676;
@@ -313,7 +327,7 @@ h1:hover {
   padding-top: .5vw;
   padding-bottom: .8vw;
   transition: .4s;
-}
+} */
 
 .projectTitle {
   color: #767676;
@@ -351,6 +365,11 @@ h1:hover {
   color: #767676;
   text-align: left;
   white-space: pre-wrap;
+}
+
+.infoandimage{
+width: 0px;
+
 }
 
 .imageContainer {

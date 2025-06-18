@@ -40,10 +40,16 @@
 
 
 <body>
-
-    <div class="about"><p>Hello there, my name is Bálint. My methodology is designing systems that can decompose and/or recompose itself therefore gains iterative quality...Into movement in type design, material modification, creative coding, generative grids. </p>
-    </div>
+    <div class="dotContainer">
 <div class="dot"><i class="fa fa-angle-right"></i></div>
+</div>
+
+    <div class="about">
+        <h1>About</h1>
+        <br>
+        <p>Hello there, my name is Bálint. My methodology is designing systems that can decompose and/or recompose itself therefore gains iterative quality...Into movement in type design, material modification, creative coding, generative grids. </p>
+    </div>
+
 
 
     
@@ -103,7 +109,7 @@
                     html += `
         <div class="container ${item.Tag}">            
         <div class="projectUnit" id="${item.Identifier}" > 
-            <div class="projectTitle"  onclick="dropdown(${item.Identifier})"><h1>${item.ProjectTitle} <i class="fa fa-angle-down"></i></h1></div>
+            <div class="projectTitle"  onclick="dropdown(${item.Identifier})"><h1>${item.ProjectTitle} </h1></div>
 
            
 
