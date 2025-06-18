@@ -23,17 +23,17 @@ html {
   width: auto;
   display: flex;
   justify-content: center;
-  align-items:flex-start;
+  align-items: flex-start;
 
 }
 
 body {
   position: absolute;
   height: auto;
-  width: 70vw;
+  width: 90vw;
   background: #c4c4c4;
   font-family: "Anek Bangla", sans-serif;
- 
+
 
 }
 
@@ -97,46 +97,28 @@ button:hover {
 
 
 .active {
-  display: flex;
-  justify-content: center;
-  background-color: #767676;
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-  font-size: 1.2em;
+  background-color: #d0d0d0;
   border-radius: 2px;
   border-style: dashed;
   border-width: 1px;
-  border-color: #767676;
+  border-color: #ffffff;
   color: white;
-  font-family: "Anek Bangla", sans-serif;
-  padding: 1vw;
-  padding-top: .5vw;
-  padding-bottom: .8vw;
   transition: .4s;
+  animation-name: example;
+  animation-duration: 3s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  cursor: pointer;
 
 }
 
 .active:hover {
-  display: flex;
-  justify-content: center;
-
-  align-items: center;
-  min-width: 2vw;
-  min-height: 2vw;
-  background-color: #3c3c3c;
-  text-decoration: none;
-  backdrop-filter: blur(5px);
-  font-size: 1.2em;
+  background-color: #d0d0d0;
   border-radius: 2px;
   border-style: dashed;
   border-width: 1px;
   border-color: #767676;
   color: #767676;
-  font-family: "Anek Bangla", sans-serif;
-  padding: 1vw;
-  padding-top: .5vw;
-  padding-bottom: .8vw;
-  transition: .4s;
   animation-name: example;
   animation-duration: 3s;
   animation-direction: alternate-reverse;
@@ -157,12 +139,12 @@ button:hover {
   border-width: 1px;
   border-color: #767676;
   color: #767676;
-  border-color: white;
+  border-color:  #767676;
 }
 
 
 .back:hover {
- 
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +156,7 @@ button:hover {
   border-width: 1px;
   border-color: #767676;
   color: white;
-  background-color: #767676; 
+  background-color: #767676;
   backdrop-filter: 5px;
   transition: .4s;
 }
@@ -193,11 +175,7 @@ img {
   border-radius: 2px;
 }
 
-img:hover {
-  opacity: 80%;
-  border-radius: 2px;
-  cursor: pointer;
-}
+
 
 /* Navigation */
 
@@ -235,12 +213,12 @@ img:hover {
 .timeLine {
   height: auto;
   border: .5px dashed white;
-   margin-right: 5vw;
-   margin-top: 5vw;
-   border-radius: 2px;
-   border-style: dashed;
-   border-width: 1px;
-   border-color: #767676;
+  margin-right: 5vw;
+  margin-top: 5vw;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
 }
 
 .dot {
@@ -256,7 +234,7 @@ img:hover {
   border-color: #767676;
   position: fixed;
   z-index: 2000;
-  color: white;
+  color: #767676;
   margin-top: -2vw;
 }
 
@@ -273,24 +251,30 @@ img:hover {
   /* flex-direction: column; */
   justify-content: left;
   align-items: center;
-  height: 60vh;
+  height: fit-content;
+  width: fit-content;
 }
 
 
 h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2vw;
+  min-height: 2vw;
   background-color: transparent;
-  color: #767676;
-  width: fit-content;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
   font-size: 1.2em;
-  padding: 1vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  font-weight: 100;
-  text-align: center;
   border-radius: 2px;
   border-style: dashed;
   border-width: 1px;
-  border-color: #767676;
+  border-color:  #767676;
+  color: #767676;
+  font-family: "Anek Bangla", sans-serif;
+  padding: 1.2vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
@@ -300,18 +284,21 @@ h1 {
 }
 
 h1:hover {
-  background-color: transparent;
-  color: white;
-  width: fit-content;
+  display: flex;
+  justify-content: center;
+  background-color: #767676;
+  text-decoration: none;
+  backdrop-filter: blur(5px);
   font-size: 1.2em;
-  padding-left: 2vw;
-  padding-right: 2vw;
-  text-align: center;
-  text-decoration-thickness: 1px;
   border-radius: 2px;
   border-style: dashed;
   border-width: 1px;
   border-color: #767676;
+  color: white;
+  font-family: "Anek Bangla", sans-serif;
+  padding: 1.2vw;
+  padding-top: .5vw;
+  padding-bottom: .8vw;
   transition: .4s;
 }
 
@@ -335,33 +322,42 @@ h1:hover {
   max-height: 720px;
 }
 
+.projectImage2 {
+  width: auto;
+  max-height: 350px;
+}
+
 .infoContainer {
   flex-direction: column;
   justify-content: left;
-  /* row-gap: -200px; */
-  column-gap: 200px;
   width: 20vw;
   background-size: 100% 100%;
   border-radius: 2px;
   padding-left: 2vw;
   padding-right: 2vw;
-  /* padding-top: 0%;
-  padding-bottom: 0%; */
   color: #767676;
   text-align: left;
   white-space: pre-wrap;
-  /* backdrop-filter: blur(5px);
-  background: rgba(255, 255, 255, 0.1); */
 }
 
 .imageContainer {
   display: flex;
   justify-content: center;
+  column-gap: 20px;
 }
+
+.imageContainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+}
+
 
 
 .outputContainer {
   display: flex;
+  align-items: flex-start;
   position: relative;
   width: auto;
 }
@@ -373,8 +369,9 @@ h1:hover {
 #output {
   /* margin-top: 20vw; */
   /* display: flex; */
-  column-gap: 4vw;
-  justify-content: center;
+  /* column-gap: 4vw; */
+  /* justify-content: center; */
+  align-items: flex-start;
   flex-wrap: wrap;
   width: auto;
   height: auto;
@@ -429,6 +426,16 @@ h1:hover {
 /* At screen smaller than 600px */
 
 @media only screen and (max-width: 600px) {
+
+  body {
+    position: absolute;
+    height: auto;
+    width: 90vw;
+    background: #c4c4c4;
+    font-family: "Anek Bangla", sans-serif;
+
+
+  }
 
   p {
     width: 80vw;
@@ -520,20 +527,12 @@ h1:hover {
 
   }
 
-  .backgroundTitle {
-    display: flex;
-    justify-content: center;
+
+
+  .about {
     width: 80vw;
-    margin-top: 18vw;
-    margin-left: 0px;
-    font-size: 3em;
+    padding-top: 40vw;
   }
-
-
-.about {
-  width: 80vw;
-  padding-top:40vw;
-}
 
   .outputContainer {
     display: flex;
@@ -545,26 +544,50 @@ h1:hover {
     flex-direction: column;
   }
 
+  .projectTitle {
+    color: #767676;
 
-
-  h1 {
-    width: 80vw;
-    font-size: 1em;
-    margin-left: 0px;
-    border-radius: 2px;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #767676;
+    rotate: 0deg;
+    width: auto;
+    font-family: "Anek Bangla", sans-serif;
   }
 
-  h1:hover {
-    width: 80vw;
+  .projectImage {
+  width: auto;
+  max-height: 350px;
+}
+
+.projectImage2 {
+  width: auto;
+  max-height: 175px;
+}
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 2vw;
+    min-height: 2vw;
+    background-color: transparent;
+    text-decoration: none;
+    backdrop-filter: blur(5px);
     font-size: 1em;
-    margin-left: 0px;
     border-radius: 2px;
     border-style: dashed;
     border-width: 1px;
-    border-color: #767676;
+    border-color:  #767676;
+    color: #767676;
+
+    font-family: "Anek Bangla", sans-serif;
+    padding: 1.2vw;
+    padding-top: .5vw;
+    padding-bottom: .8vw;
+    transition: .4s;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    cursor: pointer;
   }
 
 
@@ -575,14 +598,14 @@ h1:hover {
 
   .infoContainer {
     width: 80vw;
-    border-radius: 2px;
-    border-style: dashed;
-    border-width: 1px;
-    border-color: #767676;
+
   }
 
   .imageContainer {
-    margin-left: 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
   }
 
   .projectImage {
