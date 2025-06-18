@@ -59,7 +59,7 @@ button {
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
-  border-radius: 5px;
+  border-radius: 2px;
   border-style: dashed;
   border-width: 1px;
   border-color: #767676;
@@ -83,8 +83,8 @@ button:hover {
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
-  border-radius: 5px;
-  border-style: solid;
+  border-radius: 2px;
+  border-style: dashed;
   border-width: 1px;
   border-color: #767676;
   color: rgb(255, 255, 255);
@@ -103,8 +103,8 @@ button:hover {
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
-  border-radius: 5px;
-  border-style: solid;
+  border-radius: 2px;
+  border-style: dashed;
   border-width: 1px;
   border-color: #767676;
   color: white;
@@ -127,8 +127,8 @@ button:hover {
   text-decoration: none;
   backdrop-filter: blur(5px);
   font-size: 1.2em;
-  border-radius: 5px;
-  border-style: solid;
+  border-radius: 2px;
+  border-style: dashed;
   border-width: 1px;
   border-color: #767676;
   color: #767676;
@@ -152,8 +152,10 @@ button:hover {
   font-size: 2em;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-  border: 1px dashed white;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
   color: #767676;
   border-color: white;
 }
@@ -167,8 +169,10 @@ button:hover {
   font-size: 2em;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-  border: 1px solid white;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
   color: white;
   background-color: #767676; 
   backdrop-filter: 5px;
@@ -186,12 +190,12 @@ button:hover {
 
 img {
   max-width: 38vw;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 img:hover {
   opacity: 80%;
-  border-radius: 5px;
+  border-radius: 2px;
   cursor: pointer;
 }
 
@@ -233,6 +237,10 @@ img:hover {
   border: .5px dashed white;
    margin-right: 5vw;
    margin-top: 5vw;
+   border-radius: 2px;
+   border-style: dashed;
+   border-width: 1px;
+   border-color: #767676;
 }
 
 .dot {
@@ -242,8 +250,10 @@ img:hover {
   font-size: 2em;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
-  border: 1px dashed white;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
   position: fixed;
   z-index: 2000;
   color: white;
@@ -277,7 +287,10 @@ h1 {
   padding-right: 2vw;
   font-weight: 100;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
   transition: .4s;
   animation-name: example;
   animation-duration: 3s;
@@ -295,30 +308,27 @@ h1:hover {
   padding-right: 2vw;
   text-align: center;
   text-decoration-thickness: 1px;
-  border-radius: 5px;
+  border-radius: 2px;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #767676;
   transition: .4s;
 }
 
 .projectTitle {
   color: #767676;
   rotate: -90deg;
-  border: 1px dashed  #767676;
-  border-radius: 5px;
   width: auto;
-  /* margin-bottom: -30px; */
   font-family: "Anek Bangla", sans-serif;
 }
 
-.projectTitle :hover {
+/* .projectTitle :hover {
   color: white;
   rotate: 90deg;
-  border: 1px solid #767676;
-  border-radius: 5px;
   width: auto;
-  /* margin-bottom: -30px; */
   font-family: "Anek Bangla", sans-serif;
   transition: .4s;
-}
+} */
 
 .projectImage {
   width: auto;
@@ -332,7 +342,7 @@ h1:hover {
   column-gap: 200px;
   width: 20vw;
   background-size: 100% 100%;
-  border-radius: 5px;
+  border-radius: 2px;
   padding-left: 2vw;
   padding-right: 2vw;
   /* padding-top: 0%;
@@ -426,7 +436,7 @@ h1:hover {
 
   img {
     max-width: 80vw;
-    border-radius: 5px;
+    border-radius: 2px;
   }
 
   button {
@@ -435,6 +445,10 @@ h1:hover {
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-width: 1px;
+    border-radius: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #767676;
   }
 
   button:hover {
@@ -443,6 +457,10 @@ h1:hover {
     padding-top: 1vw;
     padding-bottom: 1vw;
     border-width: 1px;
+    border-radius: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #767676;
   }
 
   .showall {
@@ -453,8 +471,8 @@ h1:hover {
     text-decoration: none;
     backdrop-filter: blur(5px);
     font-size: .8em;
-    border-radius: 5px;
-    border-style: solid;
+    border-radius: 2px;
+    border-style: dashed;
     border-width: 1px;
     border-color: #767676;
     ;
@@ -472,8 +490,8 @@ h1:hover {
     text-decoration: none;
     backdrop-filter: blur(5px);
     font-size: .8em;
-    border-radius: 5px;
-    border-style: solid;
+    border-radius: 2px;
+    border-style: dashed;
     border-width: 1px;
     border-color: #767676;
     background-color: #7676767e;
@@ -527,20 +545,26 @@ h1:hover {
     flex-direction: column;
   }
 
-  .projectTitle{
-    rotate: 0deg;
-  }
+
 
   h1 {
     width: 80vw;
     font-size: 1em;
     margin-left: 0px;
+    border-radius: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #767676;
   }
 
   h1:hover {
     width: 80vw;
     font-size: 1em;
     margin-left: 0px;
+    border-radius: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #767676;
   }
 
 
@@ -551,6 +575,10 @@ h1:hover {
 
   .infoContainer {
     width: 80vw;
+    border-radius: 2px;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: #767676;
   }
 
   .imageContainer {
