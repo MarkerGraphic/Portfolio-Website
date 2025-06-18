@@ -63,11 +63,11 @@ button {
     z-index: 500;
     min-width: 2vw;
     min-height: 2vw;
-    background-color:black;
+    background-color:transparent;
     text-decoration: none;
     backdrop-filter: blur(5px);
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 2px;
     border-style: dashed;
     border-width: 1px;
     border-color:#767676;
@@ -79,7 +79,6 @@ button {
     padding-top: .5vw;
     padding-bottom: .8vw;
     transition: .4s;
-    /* animation-name: example; */
     animation-duration: 60s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
@@ -88,11 +87,11 @@ button {
 
 button:hover {
     z-index: 500;
-    background-color:hsla(0, 0%, 100%, 0.2);
+      background-color: #767676;
     text-decoration: none;
     backdrop-filter: blur(5px);
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 2px;
     border-style: solid;
     border-width: 1px;
     border-color: #767676;
@@ -138,7 +137,7 @@ span {
 .textContainer {
     border-radius: 5px;
     position: fixed;
-    background-color: black;
+ background: #c4c4c4;
     width: 80vw;
     height: auto;
     display: flex;
@@ -202,14 +201,6 @@ span {
         border-width: .5vw;
     }
 
-    button:hover {
-        z-index: 500;
-        font-size: 1em;
-        padding: 2vw;
-        padding-top: 1vw;
-        padding-bottom: 1vw;
-        border-width: .5vw;
-    }
 
     .box {
         position: absolute;
