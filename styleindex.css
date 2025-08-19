@@ -137,7 +137,7 @@ span {
 .textContainer {
     border-radius: 5px;
     position: fixed;
- background: #c4c4c4;
+ background: #c4c4c4c0;
     width: 80vw;
     height: auto;
     display: flex;
@@ -265,7 +265,7 @@ span {
 .loader {
   width: 50px;
   aspect-ratio: 1;
-  --g: #cecece8e calc(100% - 5px),#ffffff calc(100% - 3px) 93%,#0000;
+  --g: #cecece00 calc(100% - 5px),#ffffff calc(100% - 3px) 93%,#0000;
   background: 
     radial-gradient(farthest-side at bottom,var(--g)) top                  /100% 50%,
     radial-gradient(farthest-side at top   ,var(--g)) bottom 18% right  0  /80%  40%,
