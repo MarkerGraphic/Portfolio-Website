@@ -97,7 +97,7 @@ button:hover {
     border-width: 1px;
     border-color: #767676;
     color:white;
-    /* font-family: var(--font); */
+    font-family: 'Courier New', Courier, monospace;
     margin-right: 2vw;
     margin-bottom: 2vw;
 
@@ -121,7 +121,7 @@ button:hover {
     opacity: 100%;
     display: flex;
     align-items: center;
-    /* font-family: var(--font); */
+    font-family: 'Courier New', Courier, monospace;
     font-variation-settings: 'wght' 400, 'slnt' 0;
     font-size: 2.4em;
     color: #767676;
@@ -154,7 +154,7 @@ span {
     align-items: center;
     margin-bottom: -4vw;
 
-    /* font-family:'AnekBangla'; */
+    font-family:'Courier New', Courier, monospace;
 }
 
 
@@ -167,7 +167,7 @@ span {
     padding-left: 10vw;
     align-items: center;
     color: #767676;
-    /* font-family: var(--font); */
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -227,7 +227,7 @@ span {
         height: 40vw;
         display: flex;
         align-items: center;
-        /* font-family: var(--font); */
+        font-family: 'Courier New', Courier, monospace;
         font-variation-settings: 'wght' 400, 'slnt' 0;
         font-size: 4em;
         color: #767676;
@@ -241,7 +241,7 @@ span {
         justify-content: center;
         align-items: center;
         z-index: 200;
-        /* font-family: var(--font); */
+        font-family: 'Courier New', Courier, monospace;
 
     }
 
