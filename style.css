@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: 'Anek Bangla';
   src: url('gtpressura.woff');
-}
+} */
 
 
 
@@ -33,7 +33,7 @@ body {
   height: auto;
   width: 90vw;
   background: #c4c4c4;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 
 
 }
@@ -46,7 +46,7 @@ a {
 p {
   width: 20vw;
   margin: 0%;
-  font-family: 'Anek Bangla'
+  font-family: 'Courier New', Courier, monospace;
 }
 
 iframe {
@@ -77,7 +77,7 @@ button {
   border-width: 1px;
   border-color: #767676;
   color: #767676;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 1.2vw;
   padding-top: .5vw;
   padding-bottom: .8vw;
@@ -101,7 +101,7 @@ button:hover {
   border-width: 1px;
   border-color: #767676;
   color: rgb(255, 255, 255);
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 1.2vw;
   padding-top: .5vw;
   padding-bottom: .8vw;
@@ -200,7 +200,7 @@ img {
   justify-content: center;
   align-items: center;
   color: #767676;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .navBarContainer {
@@ -297,7 +297,7 @@ h1 {
   border-width: 1px;
   border-color:  #767676;
   color: #767676;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 1.2vw;
   padding-top: .5vw;
   padding-bottom: .8vw;
@@ -321,7 +321,7 @@ h1:hover {
   border-width: 1px;
   border-color: #767676;
   color: white;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   padding: 1.2vw;
   padding-top: .5vw;
   padding-bottom: .8vw;
@@ -332,14 +332,14 @@ h1:hover {
   color: #767676;
   rotate: -90deg;
   width: auto;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 /* .projectTitle :hover {
   color: white;
   rotate: 90deg;
   width: auto;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   transition: .4s;
 } */
 
@@ -449,7 +449,7 @@ width: 0px;
   align-items: center;
   column-gap: .5vw;
   color: #767676;
-  font-family: "Anek Bangla", sans-serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -464,7 +464,7 @@ width: 0px;
     height: auto;
     width: 80vw;
     background: #c4c4c4;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 
 
   }
@@ -505,7 +505,7 @@ width: 0px;
     border-color: #767676;
     ;
     color: white;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 1vw;
     padding-top: .5vw;
     padding-bottom: .8vw;
@@ -519,7 +519,7 @@ width: 0px;
     display: flex;
     justify-content: center;
     color: #767676;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin-bottom: 6vh;
   }
 
@@ -559,7 +559,7 @@ width: 0px;
     color: #767676;
     rotate: 0deg;
     width: auto;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .projectImage {
@@ -588,7 +588,7 @@ width: 0px;
     border-color:  #767676;
     color: #767676;
 
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 1.2vw;
     padding-top: .5vw;
     padding-bottom: .8vw;
@@ -647,6 +647,6 @@ width: 0px;
     column-gap: .5vw;
     margin-left: -2.5vw;
     color: #767676;
-    font-family: "Anek Bangla", sans-serif;
+    font-family: 'Courier New', Courier, monospace;
   }
 }
